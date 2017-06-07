@@ -4,7 +4,11 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
+<<<<<<< HEAD
 	<title>Pricing | Unify - Responsive Website Template</title>
+=======
+	<title>Pricing | Unify - Responsive Website Templatezzwasdaadasdadasd112112112</title>
+>>>>>>> 95294548219a7bb73bcbd986ab087ff5a1f0d230
 
 	<!-- Meta -->
 	<meta charset="utf-8">
