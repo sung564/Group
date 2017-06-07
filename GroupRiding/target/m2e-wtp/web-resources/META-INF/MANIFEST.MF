@@ -1,5 +1,15 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
+Built-By: SungJAE
+Build-Jdk: 1.8.0_131
+=======
+<<<<<<< HEAD
+Built-By: ju
+Build-Jdk: 1.8.0_131
+=======
 Built-By: bon
 Build-Jdk: 1.8.0_121
+>>>>>>> 95294548219a7bb73bcbd986ab087ff5a1f0d230
+>>>>>>> 2814d96ff8e2fe17941b3e953280e07b3f6be79c
 Created-By: Maven Integration for Eclipse
 

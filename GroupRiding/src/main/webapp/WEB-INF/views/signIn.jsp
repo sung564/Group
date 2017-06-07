@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -38,10 +40,23 @@
 
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="./resources/assets/css/custom.css">
-
-
+	
+	<style>
+		#close {
+			font-size: 2em;
+			color:white;
+			float: right;
+			margin-right: 15px;
+		}
+		#close:hover {
+			opacity: 0.5;
+			text-decoration: none;
+		}
+	</style>
+</head>
 
 <body style="background-color: black;">
+	<a href = "/" id = "close">X</a>
 	<div class="container content-md">
 			<div class="margin-bottom-60 head">
 				<h1>Login or Register an Account</h1>
@@ -290,3 +305,4 @@ $("#registerForm").submit(function(event){
   <script src="assets/plugins/placeholder-IE-fixes.js"></script>
   <![endif]-->
 </body>
+</html>

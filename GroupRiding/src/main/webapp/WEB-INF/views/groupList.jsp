@@ -1,12 +1,14 @@
 <%@ page language = "java" contentType = "text/html; charset = UTF-8" pageEncoding = "UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
+<<<<<<< HEAD
+	<title>Pricing | Unify - Responsive Website Template</title>
+=======
 	<title>Pricing | Unify - Responsive Website Templatezzwasdaadasdadasd112112112</title>
+>>>>>>> 95294548219a7bb73bcbd986ab087ff5a1f0d230
 
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -48,7 +50,7 @@
 		<div class="header">
 			<div class="container">
 				<!-- Logo -->
-				<a class="logo" href="main">
+				<a class="logo" href="/">
 					<img src="./resources/assets/img/logo1-default.png" alt="Logo">
 				</a>
 				<!-- End Logo -->
@@ -136,10 +138,10 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-submenu">
-									<a href="javascript:void(0);">Picture</a>
+									<a href="picture">Picture</a>
 								</li>
 								<li class="dropdown-submenu">
-									<a href="javascript:void(0);">Route</a>
+									<a href="route">Route</a>
 								</li>
 								<li class="dropdown-submenu">
 									<a href="javascript:void(0);">Grid Text Boxed</a>
@@ -189,7 +191,7 @@
 			<div class="container">
 				<h1 class="pull-left">Default Pricing Tabels</h1>
 				<ul class="pull-right breadcrumb">
-					<li><a href="main">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="">Pages</a></li>
 					<li class="active">Pricing</li>
 				</ul>
@@ -198,48 +200,374 @@
 		<!--=== End Breadcrumbs ===-->
 
 		<!--=== Content Part ===-->
-
 		<div class="container content">
 			<!-- Pricing -->
-			<div>
-			<c:forEach items="${list}" var="group">
-				<div class="row margin-bottom-40">
-					<div class="col-md-3 col-sm-6">
-						<div class="pricing hover-effect">
-							<div class="pricing-head">
-								<h3>
-									<!-- <a href="gr_info?gr_name=${group.gr_name}">-->
-									${group.gr_name}
-								</h3>
-								<h4>
-									<i>그룹인원 : </i>99
-								</h4>
-							</div>
-							<ul class="pricing-content list-unstyled">
-								<li><i>그룹장 : </i> ${group.gr_leader}</li>
-								<li><i>그룹생성일 : </i> ${group.gr_date}</li>
-								<li><i>그룹소개 : </i>${group.gr_content}</li>
-							</ul>
-							
-							<div class='popup back' style="display: none;"></div>
-							<div id="popup_front" class='popup front' style="display: none;">
-								<img id="popup_img">
-							</div>
-							</c:forEach>
-							<ul class="mailbox-attachments clearfix uploadedList"></ul>
-							<div class="pricing-footer">
-								<button class="btn-u" href="#">
-									INFO</button>
-							</div>
+			<div class="row margin-bottom-40">
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="pricing-head">
+							<h3>Begginer<span>Labore et dolore magnaras</span></h3>
+							<h4><i>$</i>5<i>.49</i> <span>Per Month</span></h4>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation</li>
+							<li><i class="fa fa-inbox"></i> 24 hour support<span></span></li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace<span></span></li>
+							<li><i class="fa fa-cloud-upload">  </i> Cloud Storage<span></span></li>
+							<li><i class="fa fa-umbrella"></i> Online Protection<span></span></li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
 						</div>
 					</div>
 				</div>
-				<!--/row-->
-			</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="pricing-head">
+							<h3>Pro Unify <span>Labore et dolore magnaras</span></h3>
+							<h4><i>$</i>8<i>.69</i><span>Per Month</span></h4>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation</li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="pricing-head">
+							<h3>Premium <span>Labore et dolore magnaras </span></h3>
+							<h4><i>$</i>69<i>.99</i> <span>Per Month</span></h4>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation</li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i>Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="pricing-head">
+							<h3>Elite<span>Labore et dolore magnaras</span></h3>
+							<h4><i>$</i>99<i>.00</i><span>Per Month</span></h4>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation</li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i>Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i>Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor.</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+
+						</div>
+					</div>
+				</div>
+			</div><!--/row-->
 			<!-- End Pricing -->
 
 			<hr class="margin-bottom-60"/>
-		
+
+			<!-- Pricing bg-colored -->
+			<div class="row margin-bottom-40 pricing-bg-colored">
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="sticker-right">New</div>
+						<div class="pricing-head">
+							<h3>Begginer <span>Labore et dolore magnaras</span></h3>
+							<ul class="list-unstyled list-inline rating">
+								<li><i class="fa fa-star fa-2x"></i></li>
+								<li><i class="fa fa-star-half-empty fa-2x"></i></li>
+								<li><i class="fa fa-star-o fa-2x"></i></li>
+								<li><i class="fa fa-star-o fa-2x"></i></li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum condimentum...</p>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation</li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<h4><i>$</i>5<i>.49</i> <span>Per Month</span></h4>
+							<a href="#" class="btn-u"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="sticker-right">New</div>
+						<div class="pricing-head">
+							<h3>Unify Pro <span>Labore et dolore magnaras</span></h3>
+							<ul class="list-unstyled list-inline rating">
+								<li><i class="fa fa-star fa-2x"></i></li>
+								<li><i class="fa fa-star fa-2x"></i></li>
+								<li><i class="fa fa-star-o fa-2x"></i></li>
+								<li><i class="fa fa-star-o fa-2x"></i></li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum condimentum...</p>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation</li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<h4><i>$</i>8<i>.69</i> <span>Per Month</span></h4>
+							<a href="#" class="btn-u"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="sticker-right">New</div>
+						<div class="pricing-head">
+							<h3>Premium <span>Labore et dolore magnaras</span></h3>
+							<ul class="list-unstyled list-inline rating">
+								<li><i class="fa fa-star fa-2x"></i></li>
+								<li><i class="fa fa-star fa-2x"></i></li>
+								<li><i class="fa fa-star-half-empty fa-2x"></i></li>
+								<li><i class="fa fa-star-o fa-2x"></i></li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum condimentum...</p>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation</li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<h4><i>$</i>69<i>.99</i> <span>Per Month</span></h4>
+							<a href="#" class="btn-u"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect pricing-bg-colored">
+						<div class="sticker-right">New</div>
+						<div class="pricing-head">
+							<h3>Elite <span>Labore et dolore magnaras</span></h3>
+							<ul class="list-unstyled list-inline rating">
+								<li><i class="fa fa-star fa-2x"></i></li>
+								<li><i class="fa fa-star fa-2x"></i></li>
+								<li><i class="fa fa-star fa-2x"></i></li>
+								<li><i class="fa fa-star fa-2x"></i></li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum condimentum...</p>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation</li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<h4><i>$</i>99<i>.00</i> <span>Per Month</span></h4>
+							<a href="#" class="btn-u"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+			</div><!--/row-->
+			<!-- End Pricing bg-colored -->
+
+			<hr class="margin-bottom-60"/>
+
+			<!-- Pricing Rounded -->
+			<div class="row margin-bottom-40 pricing-rounded">
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="sticker-right">15%<i class="fa fa-gift"></i></div>
+						<div class="pricing-head">
+							<h3 >Begginer</h3>
+							<h4 ><i>$</i>5<i>.49</i><span>Per Month</span></h4>
+							<h6>Labore et dolore magnaras</h6>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li class="bg-color"><i class="fa fa-location-arrow"></i>Free customisation<span><i class="fa fa-check"></i></span></li>
+							<li><i class="fa fa-inbox"></i>24 hour support</li>
+							<li class="bg-color"><i class="fa fa-globe"></i>10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li class="bg-color"><i class="fa fa-cloud"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor.</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="sticker-right">30%<i class="fa fa-gift"></i></div>
+						<div class="pricing-head">
+							<h3 >Unify Pro</h3>
+							<h4 ><i>$</i>8<i>.69</i> <span>Per Month</span></h4>
+							<h6>Labore et dolore magnaras</h6>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li class="bg-color"><i class="fa fa-location-arrow"></i> Free customisation <span><i class="fa fa-check"></i></span></li>
+							<li><i class="fa fa-inbox"></i> 24 hour support<span><i class="fa fa-check"></i></span></li>
+							<li class="bg-color"><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li class="bg-color"><i class="fa fa-cloud"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor.</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="sticker-right">50%<i class="fa fa-gift"></i></div>
+						<div class="pricing-head">
+							<h3 >Premium</h3>
+							<h4><i>$</i>69<i>.99</i><span>Per Month</span></h4>
+							<h6>Labore et dolore magnaras </h6>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li class="bg-color"><i class="fa fa-location-arrow"></i> Free customisation <span><i class="fa fa-check"></i></span></li>
+							<li><i class="fa fa-inbox"></i>24 hour support<span><i class="fa fa-check"></i></span></li>
+							<li class="bg-color"><i class="fa fa-globe"></i> 10 GB Disckspace<span><i class="fa fa-check"></i></span></li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li class="bg-color"><i class="fa fa-cloud"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor.</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing hover-effect">
+						<div class="sticker-right">75%<i class="fa fa-gift"></i></div>
+						<div class="pricing-head">
+							<h3 >Elite  </h3>
+							<h4 ><i>$</i>99<i>.00</i> <span>Per Month</span></h4>
+							<h6>Labore et dolore magnaras </h6>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li class="bg-color"><i class="fa fa-location-arrow"></i>Free customisation<span><i class="fa fa-check"></i></span></li>
+							<li><i class="fa fa-inbox"></i> 24 hour support<span><i class="fa fa-check"></i></span></li>
+							<li class="bg-color"><i class="fa fa-globe"></i> 10 GB Disckspace<span><i class="fa fa-check"></i></span></li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage<span><i class="fa fa-check"></i></span></li>
+							<li class="bg-color"><i class="fa fa-cloud"></i> Online Protection<span><i class="fa fa-check"></i></span></li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor.</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+			</div><!--/row-->
+			<!-- End Pricing Rounded -->
+
+			<hr class="margin-bottom-60" />
+
+			<!-- Pricing "No Spacing" -->
+			<div class="row no-space-pricing pricing-zoom">
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<h3>Begginer <span>Labore et dolore magnaras </span></h3>
+							<h4><i>$</i>5<i>.49</i> <span>Per Month</span></h4>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation </li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<h3>Pro Unify <span>Labore et dolore magnaras</span></h3>
+							<h4><i>$</i>8<i>.69</i> <span>Per Month</span></h4>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation </li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<h3>Premium <span>Labore et dolore magnaras </span></h3>
+							<h4><i>$</i>69<i>.99</i><span>Per Month</span></h4>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation </li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<h3>Elite<span>Labore et dolore magnaras </span></h3>
+							<h4><i>$</i>99<i>.00</i> <span>Per Month</span></h4>
+						</div>
+						<ul class="pricing-content list-unstyled">
+							<li><i class="fa fa-gift"></i> Free customisation</li>
+							<li><i class="fa fa-inbox"></i> 24 hour support</li>
+							<li><i class="fa fa-globe"></i> 10 GB Disckspace</li>
+							<li><i class="fa fa-cloud-upload"></i> Cloud Storage</li>
+							<li><i class="fa fa-umbrella"></i> Online Protection</li>
+						</ul>
+						<div class="pricing-footer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cloud Storage magna psum olor .</p>
+							<a class="btn-u" href="#"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+						</div>
+					</div>
+				</div>
+			</div><!--/row-->
+			<!-- End Pricing "No Spacing" -->
 		</div><!--/container-->
 		<!--=== End Content Part ===-->
 
@@ -250,7 +578,7 @@
 					<div class="row">
 						<!-- About -->
 						<div class="col-md-3 md-margin-bottom-40">
-							<a href="main"><img id="logo-footer" class="footer-logo" src="./resources/assets/img/logo2-default.png" alt=""></a>
+							<a href="/"><img id="logo-footer" class="footer-logo" src="./resources/assets/img/logo2-default.png" alt=""></a>
 							<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
 							<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
 						</div><!--/col-md-3-->
@@ -383,32 +711,11 @@
 			StyleSwitcher.initStyleSwitcher();
 		});
 	</script>
-	<script type="text/javascript" src="./resources/js/upload.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 <!--[if lt IE 9]>
 	<script src="assets/plugins/respond.js"></script>
 	<script src="assets/plugins/html5shiv.js"></script>
 	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
-<script id="templateAttach" type="text/x-handlebars-template">
-  <span class="mailbox-attachment-icon has-img"><img src="{{imgsrc}}" alt="Attachment"></span>
-</script>  
 
-<script>
-	var template = Handlebars.compile($("#templateAttach").html());	
-	
-	$.getJSON("gr_iconl",function(list){
-		$(list).each(function(){
-			
-			var fileInfo = getFileInfo(this);
-			
-			var html = template(fileInfo);
-			var aaa = 1;
-			
-			$(".uploadedList").append(html);
-			
-		});
-	});
-</script>
 </body>
 </html>

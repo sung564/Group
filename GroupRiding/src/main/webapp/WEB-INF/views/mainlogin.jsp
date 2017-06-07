@@ -81,28 +81,6 @@
 						</div>
 						<!-- ENd Navbar Brand -->
 
-						<!-- Header Inner Right -->
-						<div class="header-inner-right">
-							<ul class="menu-icons-list">
-								<li class="menu-icons shopping-cart">
-									<i class="menu-icons-style radius-x fa fa-shopping-cart"></i>
-									<span class="badge">0</span>
-									<div class="shopping-cart-open">
-										<span class="shc-title">No products in the Cart</span>
-										<button type="button" class="btn-u"><i class="fa fa-shopping-cart"></i> Cart</button>
-										<span class="shc-total">Total: <strong>$0.00</strong></span>
-									</div>
-								</li>
-								<li class="menu-icons">
-									<i class="menu-icons-style search search-close search-btn fa fa-search"></i>
-									<div class="search-open">
-										<input type="text" class="animated fadeIn form-control" placeholder="Start searching ...">
-									</div>
-								</li>
-							</ul>
-						</div>
-						<!-- End Header Inner Right -->
-					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
@@ -110,7 +88,7 @@
 							<ul class="nav navbar-nav">
 								<!-- Home -->
 								<li class="dropdown active">
-									<a href="main" class="dropdown-toggle" data-toggle="dropdown">
+									<a href="/" class="dropdown-toggle" data-toggle="dropdown">
 										Home
 									</a>
 								</li>
@@ -155,8 +133,8 @@
 										Sharing
 									</a>
 									<ul class="dropdown-menu">
-										<li><a href="One-Pages/Classic/index.html">Picture</a></li>
-										<li><a href="One-Pages/Classic/one_page_dark.html">Route</a></li>
+										<li><a href="picture">Picture</a></li>
+										<li><a href="route">Route</a></li>
 										<li><a target="_blank" href="One-Pages/Classic/one_page_home1.html">- One Page Option 1</a></li>
 										<li><a target="_blank" href="One-Pages/Classic/one_page_home2.html">- One Page Option 2</a></li>
 										<li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">- One Page Option 3</a></li>
@@ -323,7 +301,7 @@
 					<div class="row">
 						<!-- About -->
 						<div class="col-md-3 md-margin-bottom-40">
-							<a href="main"><img id="logo-footer" class="footer-logo" src="./resources/assets/img/logo2-default.png" alt=""></a>
+							<a href="/"><img id="logo-footer" class="footer-logo" src="./resources/assets/img/logo2-default.png" alt=""></a>
 							<p>GroupRiding은 2017년 9월에 탄생하였습니다.</p>
 							<p>그중 첫번째 프로젝트에 해당한다.</p>
 						</div><!--/col-md-3-->
@@ -518,9 +496,9 @@
 	});
 </script>
 <!--[if lt IE 9]>
-	<script src="assets/plugins/respond.js"></script>
-	<script src="assets/plugins/html5shiv.js"></script>
-	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+	<script src="/plugins/respond.js"></script>
+	<script src="/plugins/html5shiv.js"></script>
+	<script src="/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
 
 
