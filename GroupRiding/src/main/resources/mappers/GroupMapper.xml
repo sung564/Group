@@ -29,16 +29,24 @@
  		where gr_name= #{gr_name};
 	</select>
 	
-	<!-- 그룹 리스트 -->
-	<select id="gr_list" resultType="GroupBean"> 
-		select * from gr_group order by gr_date desc
-	</select>
-	
 	<!-- 그룹 아이콘 -->
 	<select id="gr_icon" resultType="string">
 		select a.fullName, b.gr_name
 		from gr_icon a, gr_group b
 		where a.gr_name=#{gr_name}
 	</select>
+	
+	<!-- 그룹 리스트 -->
+	<select id="gr_list" resultType="GroupBean"> 
+		select * from gr_group order by gr_date desc
+	</select>
+	
+	<!-- 그룹 아이콘 -->
+	<select id="gr_iconl" resultType="string">
+		select fullName, gr_name
+		from gr_icon=gr_group;
+	</select>
+	
+	
 	
 </mapper>

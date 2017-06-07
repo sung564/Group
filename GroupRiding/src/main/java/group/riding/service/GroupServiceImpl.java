@@ -32,13 +32,17 @@ public class GroupServiceImpl implements GroupService {
 
 	@Override
 	public List<GroupBean> gr_list() throws Exception {
-		// TODO Auto-generated method stub
 		return dao.gr_list();
 	}
 
 	@Override
 	public List<String> gr_icon(String gr_name) throws Exception {
 		return dao.gr_icon(gr_name);
+	}
+
+	@Override
+	public List<GroupBean> gr_iconl() throws Exception {
+		return dao.gr_iconl();
 	}
 
 }

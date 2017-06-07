@@ -13,4 +13,6 @@ public interface GroupService {
 	public List<GroupBean> gr_list() throws Exception;	// 그룹 리스트
 	
 	public List<String> gr_icon(String gr_name) throws Exception;	// 아이콘 리스트
+	
+	public List<GroupBean> gr_iconl() throws Exception;	// 아이콘 리스트
 }

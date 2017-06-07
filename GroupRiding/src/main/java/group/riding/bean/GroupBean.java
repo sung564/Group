@@ -25,6 +25,7 @@ public class GroupBean {
 	public void setUid(int uid) {
 		this.uid = uid;
 	}
+	
 	public int getRiding_no() {
 		return riding_no;
 	}

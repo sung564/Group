@@ -99,27 +99,27 @@
 	
 					<div class="input-group margin-bottom-20">
 						<span class="input-group-addon rounded-left"><i class="icon-pencil"></i></span>
-						<input type="text" class="form-control rounded-right" placeholder="ID" id="uid" name="uid">
+						<input type="text" class="form-control rounded-right" placeholder="아이디" id="uid" name="uid">
 					</div>
 
 					<div class="input-group margin-bottom-20">
 						<span class="input-group-addon rounded-left"><i class="icon-user"></i></span>
-						<input type="text" class="form-control rounded-right" placeholder="Username" id="uname" name="uname">
+						<input type="text" class="form-control rounded-right" placeholder="이름" id="uname" name="uname">
 					</div>
 
 					<div class="input-group margin-bottom-20">
 						<span class="input-group-addon rounded-left"><i class="icon-lock"></i></span>
-						<input type="password" class="form-control rounded-right" placeholder="Password" id="upw" name="upw">
+						<input type="password" class="form-control rounded-right" placeholder="비밀번호" id="upw" name="upw">
 					</div>
 
 					<div class="input-group margin-bottom-20">
 						<span class="input-group-addon rounded-left"><i class="icon-lock"></i></span>
-						<input type="password" class="form-control rounded-right" placeholder="Password1" id="upw1" name="upw1">
+						<input type="password" class="form-control rounded-right" placeholder="비밀번호 확인" id="upw1" name="upw1">
 					</div>
 
 					<div class="input-group margin-bottom-20">
 						<span class="input-group-addon rounded-left"><i class="icon-user"></i></span>
-						<input type="number" class="form-control rounded-right" placeholder="UserAge" id="uage" name="uage">
+						<input type="number" class="form-control rounded-right" placeholder="생년월일" id="uage" name="uage">
 					</div>
 
 					<div>	<!-- 파일 업로드 -->
