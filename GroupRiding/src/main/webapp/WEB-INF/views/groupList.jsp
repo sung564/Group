@@ -6,7 +6,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-	<title>Pricing | Unify - Responsive Website Templatezzwasdaadasdadasd</title>
+	<title>Pricing | Unify - Responsive Website Templatezzwasdaadasdadasd112112112</title>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
