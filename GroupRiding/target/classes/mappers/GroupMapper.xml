@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">	<!-- 규칙 -->
+  
+  <mapper namespace="group.riding.GroupMapper">
+	
+	<!-- 그룹 생성 -->
+	<insert id="create_gr">	
+		insert into gr_group(gr_name, gr_leader, gr_content)
+  		values (#{gr_name}, #{gr_leader}, #{gr_content})
+	</insert>
+	
+	<!-- 그룹 관계 -->
+	<insert id="gr_gr">
+		insert into gr_gr(gr_name, uid)
+  		values (#{gr_name}, #{uid})
+	</insert>
+	
+	<!-- 그룹 아이콘 -->
+	<insert id="icon">	<!-- 프로필 -->
+		insert into gr_icon(fullName, gr_name)
+		values(#{files}, #{gr_name})
+	</insert>
+	
+	<!-- 그룹 정보 -->
+	<select id="gr_info" resultType="GroupBean"> 
+		select * from gr_group
+ 		where gr_name= #{gr_name};
+	</select>
+	
+	<!-- 그룹 리스트 -->
+	<select id="gr_list" resultType="GroupBean"> 
+		select * from gr_group order by gr_date desc
+	</select>
+	
+	<!-- 그룹 아이콘 -->
+	<select id="gr_icon" resultType="string">
+		select a.fullName, b.gr_name
+		from gr_icon a, gr_group b
+		where a.gr_name=#{gr_name}
+	</select>
+	
+</mapper>
