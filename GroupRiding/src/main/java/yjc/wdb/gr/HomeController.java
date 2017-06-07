@@ -69,4 +69,13 @@ public class HomeController {
 		
 	}
 	
+	@RequestMapping(value = "picture", method = RequestMethod.GET)
+	public void picture() {
+		
+	}
+	
+	@RequestMapping(value = "route", method = RequestMethod.GET)
+	public void route() {
+		
+	}
 }
