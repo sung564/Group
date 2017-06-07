@@ -22,6 +22,8 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="yjc.wdb.gr" />
+	
+	<!-- 로그인 -->
 	<beans:bean id="loginInterceptor" class="group.riding.interceptor.LoginInterceptor"></beans:bean>
 	
 	<interceptors>
@@ -41,6 +43,5 @@
     <beans:constructor-arg value="C:\\zzz\\upload">
     </beans:constructor-arg>
   </beans:bean>
-	
 	
 </beans:beans>

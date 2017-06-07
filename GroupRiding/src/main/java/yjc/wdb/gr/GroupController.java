@@ -36,27 +36,32 @@ public class GroupController {
 	public String create(@ModelAttribute GroupBean gr) throws Exception {
 		service.create_gr(gr);
 		
-		return "redirect:gr_list";
+		return "redirect:groupList";
 	}
 	
-	@RequestMapping(value="gr_list", method=RequestMethod.GET)	// Í∑∏Î£π Î¶¨Ïä§Ìä∏
+	@RequestMapping(value="groupList", method=RequestMethod.GET)	// Í∑∏Î£π Î¶¨Ïä§?ä∏
 	public void ListAll(Model model)throws Exception{
 		List<GroupBean> list =service.gr_list();
 		model.addAttribute("list", list);
 	}
 	
-	@RequestMapping("gr_icon/{gr_name}")	// Í∑∏Î£π ÏïÑÏù¥ÏΩò Î¶¨Ïä§Ìä∏
+	@RequestMapping("gr_icon/{gr_name}")	// Í∑∏Î£π ?ïÑ?ù¥ÏΩ? Î¶¨Ïä§?ä∏
 	@ResponseBody
 	public List<String> gr_icon(@PathVariable("gr_name")String gr_name) throws Exception {
 		return service.gr_icon(gr_name);
 	}
 	
 	
-	@RequestMapping(value="gr_info", method=RequestMethod.GET)	// Í∑∏Î£π ÏÉÅÏÑ∏
+	@RequestMapping(value="gr_info", method=RequestMethod.GET)	// Í∑∏Î£π ?ÉÅ?Ñ∏
 	public void gr_info(@RequestParam(value="gr_name") String gr_name, Model model) throws Exception {
 		GroupBean gr = service.gr_info(gr_name);
 		model.addAttribute("group", gr);
 	}
 	
+	@RequestMapping("gr_iconl")	// Í∑∏Î£π ?ïÑ?ù¥ÏΩ? Î¶¨Ïä§?ä∏
+	@ResponseBody
+	public List<GroupBean> gr_iconl() throws Exception {
+		return service.gr_iconl();
+	}
 	
 }

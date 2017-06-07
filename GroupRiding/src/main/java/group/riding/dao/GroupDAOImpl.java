@@ -47,4 +47,9 @@ public class GroupDAOImpl implements GroupDAO {
 		return session.selectList(namespace + ".gr_icon", gr_name);
 	}
 
+	@Override
+	public List<GroupBean> gr_iconl() throws Exception {
+		return session.selectList(namespace + ".gr_iconl");
+	}
+
 }
