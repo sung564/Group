@@ -77,6 +77,8 @@
 							<a href="">
 								<img class="default-logo" src="./resources/assets/img/logo3-light.png" alt="Logo">
 								<img class="shrink-logo" src="./resources/assets/img/logo3-dark.png" alt="Logo">
+								<img class="default-logo" src="./resources/assets/img/logo3-light.png" alt="Logo">
+								<img class="shrink-logo" src="./resources/assets/img/logo3-dark.png" alt="Logo">
 							</a>
 						</div>
 						<!-- ENd Navbar Brand -->
@@ -89,6 +91,9 @@
 							<ul class="nav navbar-nav">
 								<!-- Home -->
 								<li class="dropdown active">
+									<a href="/" class="dropdown-toggle" data-toggle="dropdown">
+										Home
+									</a>
 									<a href="/" class="dropdown-toggle" data-toggle="dropdown">
 										Home
 									</a>
