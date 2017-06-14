@@ -109,6 +109,14 @@
 										<li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">- One Page Option 3</a></li>
 									</ul>
 									
+									<ul class="dropdown-menu">
+										<li><a href="groupList">Group List</a></li>
+										<li><a href="groupRank">Ranking</a></li>
+										<li><a target="_blank" href="One-Pages/Classic/one_page_home1.html">- One Page Option 1</a></li>
+										<li><a target="_blank" href="One-Pages/Classic/one_page_home2.html">- One Page Option 2</a></li>
+										<li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">- One Page Option 3</a></li>
+									</ul>
+									
 								</li>
 								<!-- End Pages -->
 
@@ -264,6 +272,8 @@
 			<p class="space-xlg-hor text-center color-light">실시간 현황판을 통하여, 여러분도 어서 그룹라이딩의 세계로 빠져 보세요</p>
 
 			<div class="margin-bottom-40"></div>
+			
+						<div class="margin-bottom-40"></div>
 
 			<div class="row">
 				<div class="col-sm-3 col-xs-6 md-margin-bottom-20">
