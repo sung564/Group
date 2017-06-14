@@ -47,7 +47,7 @@
 		<div class="header">
 			<div class="container">
 				<!-- Logo -->
-				<a class="logo" href="main">
+				<a class="logo" href="/">
 					<img src="./resources/assets/img/logo1-default.png" alt="Logo">
 				</a>
 				<!-- End Logo -->
@@ -188,7 +188,7 @@
 			<div class="container">
 				<h1 class="pull-left">Restaurant</h1>
 				<ul class="pull-right breadcrumb">
-					<li><a href="main">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="hotPlaceMap">Map</a></li>
 					<li class="active">Restaurant</li>
 				</ul>
@@ -370,7 +370,7 @@
 						<div class="row">
 							<!-- About -->
 							<div class="col-md-3 md-margin-bottom-40">
-								<a href="main"><img id="logo-footer" class="footer-logo" src="./resources/assets/img/logo2-default.png" alt=""></a>
+								<a href="/"><img id="logo-footer" class="footer-logo" src="./resources/assets/img/logo2-default.png" alt=""></a>
 								<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
 								<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
 							</div><!--/col-md-3-->

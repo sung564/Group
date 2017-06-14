@@ -81,7 +81,6 @@
 						</div>
 						<!-- ENd Navbar Brand -->
 
-					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
@@ -182,12 +181,12 @@
 					</span>
 				</h2>
 				<div class="animated fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
-					<!-- <a href="#" class="btn-u btn-brd btn-brd-width-2 btn-brd-hover btn-u-light btn-u-block rounded-4x margin-right-10">Start</a> -->
-					<form action="signIn" method="get">
-						<button type="submit" class="btn-u btn-brd btn-brd-width-2 btn-brd-hover btn-u-light btn-u-block rounded-4x">Login</button>
+					<h1>${userBean.uname}님</h1>
+					<ul class="mailbox-attachments clearfix uploadedList"></ul>
+					<form action="create_gr" method="get">
+						<button type="submit" style="color:black;">그룹생성</button>
 					</form>
 				</div>
-				
 			</div>
 		</div>
 		<!--=== End Full Height Text Rotater ===-->
@@ -457,6 +456,10 @@
 	<script src="./resources/assets/js/plugins/fancy-box.js"></script>
 	<script src="./resources/assets/js/plugins/owl-carousel.js"></script>
 	<script src="./resources/assets/js/plugins/style-switcher.js"></script>
+	
+	<script type="text/javascript" src="./resources/js/upload.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+	
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
@@ -467,11 +470,39 @@
 			StyleSwitcher.initStyleSwitcher();
 		});
 	</script>
+	
+<script id="templateAttach" type="text/x-handlebars-template">
+  <span class="mailbox-attachment-icon has-img"><img src="{{imgsrc}}" alt="Attachment"></span> 
+</script>  
+
+<script>
+	var uid = "${userBean.uid}";	//
+	var template = Handlebars.compile($("#templateAttach").html());	
+	
+	$.getJSON("getAttach/"+uid,function(list){
+		$(list).each(function(){
+			
+			var fileInfo = getFileInfo(this);
+			
+			var html = template(fileInfo);
+			var aaa = 1;
+			
+			if(aaa=1){
+			 	$(".uploadedList").append(html);
+				a++;
+			}
+			
+		});
+	});
+</script>
 <!--[if lt IE 9]>
-	<script src="assets/plugins/respond.js"></script>
-	<script src="assets/plugins/html5shiv.js"></script>
-	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+	<script src="/plugins/respond.js"></script>
+	<script src="/plugins/html5shiv.js"></script>
+	<script src="/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
+
+
+
 
 </body>
 </html>

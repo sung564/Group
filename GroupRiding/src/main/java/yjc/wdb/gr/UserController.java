@@ -81,7 +81,7 @@ public class UserController {
 		UserBean bean = service.login(dto);
 		
 		if(bean == null) {
-			System.out.println("ï¿½ï¿½ï¿½Ìµï¿½ or ï¿½ï¿½Ð¹ï¿½È£ Æ²ï¿½ï¿½");
+			System.out.println("¾ÆÀÌµð or ºñ¹Ð¹øÈ£ Æ²¸²");
 			return "signIn";
 		}
 		
@@ -92,22 +92,22 @@ public class UserController {
 		session.setAttribute("uid", bean.getUid());
 		model.addAttribute("userBean", bean);
 		
-		return "success";
+		return "mainlogin";
 	}
 	
-	/*@RequestMapping(value="ck", method=RequestMethod.GET)	// ï¿½ßºï¿½Ã¼Å©
-	public String read(@RequestParam(value="uid")String uid, Model model) throws Exception{ //defaultValue ï¿½ï¿½ Stringï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
-		System.out.println("ï¿½Ñ¾ï¿½ï¿½ï¿½Â¾ï¿½ï¿½Ìµï¿½:"+uid);
+	/*@RequestMapping(value="ck", method=RequestMethod.GET)	// Áßº¹Ã¼Å©
+	public String read(@RequestParam(value="uid")String uid, Model model) throws Exception{ //defaultValue ´Â String¸¸ ³ÖÀ» ¼ö ÀÖ´Ù.
+		System.out.println("³Ñ¾î¿À´Â¾ÆÀÌµð:"+uid);
 		int num = service.ck(uid);
 		
 		model.addAttribute("id", uid);
 		model.addAttribute("check", num);
 		System.out.println(num);
 		if(num==0) {
-			System.out.println("ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("°¡´É");
 			
 		} else {
-			System.out.println("ï¿½Ò°ï¿½ï¿½ï¿½");
+			System.out.println("ºÒ°¡´É");
 		}
 		
 		return "register";
